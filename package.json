@@ -11,8 +11,8 @@
   ],
   "license": "LGPL",
   "dependencies": {
-    "handlebars": "^4.0.4",
-    "toner-handlebars": "^0.1.0"
+    "handlebars": "4.0.4",
+    "toner-handlebars": "0.1.1"
   },
   "author": "Jan Blaha",
   "devDependencies": {}
