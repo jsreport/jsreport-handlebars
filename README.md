@@ -1,4 +1,4 @@
-#jsreport-ejs
+#jsreport-handlebars
 [![NPM Version](http://img.shields.io/npm/v/jsreport-handlebars.svg?style=flat-square)](https://npmjs.com/package/jsreport-handlebars)
 [![Build Status](https://travis-ci.org/jsreport/jsreport-handlebars.png?branch=master)](https://travis-ci.org/jsreport/jsreport-handlebars)
 
@@ -22,5 +22,5 @@ You can apply this extension also manually to [jsreport-core](https://github.com
 
 ```js
 var jsreport = require('jsreport-core')()
-jsreport.use(require('jsreport-handlebars')()
+jsreport.use(require('jsreport-handlebars')())
 ```
