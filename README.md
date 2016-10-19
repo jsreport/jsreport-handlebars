@@ -13,7 +13,7 @@ To use `handlebars` in for template rendering set `template.engine=handlebars` i
 
 ```js
 {
-  template: { content: '...', recipe: '...', enginne: 'handlebars' }
+  template: { content: '...', recipe: '...', engine: 'handlebars' }
 }
 ```
 
