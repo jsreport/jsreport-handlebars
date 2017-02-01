@@ -3,7 +3,7 @@
   "version": "1.0.1",
   "description": "jsreport handlebars templating engine",
   "scripts": {
-    "test": "mocha test"
+    "test": "standard && mocha test --timeout=5000"
   },
   "homepage": "https://github.com/jsreport/jsreport-handlebars",
   "repository": {
@@ -14,16 +14,27 @@
     "jsreport",
     "handlebars"
   ],
+  "standard": {
+    "env": {
+      "node": true,
+      "mocha": true
+    }
+  },
   "license": "LGPL",
   "dependencies": {
     "handlebars": "4.0.5"
   },
   "author": "Jan Blaha",
   "devDependencies": {
+    "eslint": "3.14.1",
+    "jsreport-core": "1.1.0",
     "mocha": "2.5.3",
-    "should": "9.0.2"
+    "should": "9.0.2",
+    "standard": "8.6.0"
   },
   "files": [
-    "lib", "index.js", "jsreport.config.js"
+    "lib",
+    "index.js",
+    "jsreport.config.js"
   ]
 }
