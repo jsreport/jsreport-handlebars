@@ -33,3 +33,37 @@ describe('handlebars', function () {
     html.should.be.eql("<img src='{#image foo}'/><img src='{#image bar}'/>")
   })
 })
+
+describe('handlebars full', function () {
+  var jsreport = require('jsreport-core')()
+
+  beforeEach(function () {
+    return jsreport.use(require('../')()).init()
+  })
+
+  it('should expose handlebars global object', function () {
+    return jsreport.render({
+      template: {
+        content: '{{foo}}',
+        engine: 'handlebars',
+        recipe: 'html',
+        helpers: "function foo() { return handlebars.escapeExpression('a') }"
+      }
+    }).then(function (res) {
+      res.content.toString().should.be.eql('a')
+    })
+  })
+
+  it('should expose Handlebars global object', function () {
+    return jsreport.render({
+      template: {
+        content: '{{foo}}',
+        engine: 'handlebars',
+        recipe: 'html',
+        helpers: "function foo() { return Handlebars.escapeExpression('a') }"
+      }
+    }).then(function (res) {
+      res.content.toString().should.be.eql('a')
+    })
+  })
+})
