@@ -1,6 +1,6 @@
 {
   "name": "jsreport-handlebars",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "jsreport handlebars templating engine",
   "scripts": {
     "test": "standard && mocha test --timeout=5000"
