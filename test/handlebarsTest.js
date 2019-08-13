@@ -28,10 +28,11 @@ describe('handlebars', () => {
   })
 
   it('should work with jsreport syntax in many places', () => {
-    const html = handlebars("{#child @data.foo={{aHelper}}}<img src='{#image {{name2}}}'/>")({
-      aHelper: () => { 'a' }
-    }, { name2: 'bar' })
-    html.should.be.eql("{#child @data.foo=a}<img src='{#image bar}'/>")
+    const html = handlebars(
+      "{{name2}} {#child @data.foo={{aHelper}}}<img src='{#image {{name2}}}'/>"
+    )({ aHelper: () => { return 'a' } }, { name2: 'bar' })
+
+    html.should.be.eql("bar {#child @data.foo=a}<img src='{#image bar}'/>")
   })
 })
 
