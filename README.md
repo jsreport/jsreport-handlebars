@@ -1,3 +1,6 @@
+**⚠️ This repository has been moved to the monorepo [jsreport/jsreport](https://github.com/jsreport/jsreport)**
+--
+
 # jsreport-handlebars
 [![NPM Version](http://img.shields.io/npm/v/jsreport-handlebars.svg?style=flat-square)](https://npmjs.com/package/jsreport-handlebars)
 [![Build Status](https://travis-ci.org/jsreport/jsreport-handlebars.png?branch=master)](https://travis-ci.org/jsreport/jsreport-handlebars)
